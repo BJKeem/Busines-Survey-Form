@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.Main{
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 100px;
+}
+.keem h1{
+    font-size: 38px;
+    color: #ffa500;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li{
+    margin-right: 10px;
+}
+ul li a{
+    font-size: 16px;
+    color: #ffa500;
+    text-decoration: none;
+    padding: 11px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+ul li a:hover{
+    background-color: #1e3354;
+}
+ul li .active{
+    background-color: #1e3354;
+}
+.searchbar{
+    display: flex;
+}
+.searchbar input{
+    font-size: 16px;
+    width: 215px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.searchbar button{
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #1e3354;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.writeup{
+    margin-left: 8%;
+    margin-top: 20%;
+}
+.writeup h1{
+    font-size: 30px;
+    color: #1e3354;
+    margin-bottom: 10px;
+}
+span{
+    color: #ffa500;
+}
+.writeup p{
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 25px;
+}
+.writeup a{
+    border-radius: 10px;
+    background-color: #212121;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px ;
+    margin: 30px 0px;
+    display: inline-block;
+}
+.writeup a:hover{
+    background-color: navy;}
+.coverpic{
+    width: 350px;
+    min-height: 100px;
+    padding: 25px; 
+    margin-left: 70%;
+    bottom: 10px;
+    position: absolute;
+}
+.coverpic .pic:nth-child(1){
+    position: relative;
+    width: 350px;
+    height: 350px;
+    box-shadow: inset 25px 35px 20px rgba(0, 0, 0, 0.1) ;
+    inset: -20px -20px 25px rgba(255,255,255,0.9) ;
+}
+.coverpic .pic:nth-child(1){
+    border-radius: 47% 53% 70% 30% / 30% 43% 57% 70%;
+}
+.coverpic .pic:hover{
+    border-radius: 50%;
+    animation: ani 2.5s linear infinite;
+}
+@keyframes ani{
+    to{
+        transform: rotate(360deg);
+    }
+}
+.coverpic .pic::before{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 85px;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+.coverpic .pic::after{
+    content: '';
+    position: absolute;
+    top: 9%;
+    left: 110px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.9;}
